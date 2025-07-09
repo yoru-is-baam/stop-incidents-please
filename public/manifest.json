@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Stop incidents, please!!",
+  "version": "1.0",
+  "description": "A clean MV3 extension using Vite and TypeScript",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"]
+    }
+  ],
+  "permissions": ["storage"],
+  "icons": {
+    "128": "icons/icon128.png"
+  }
+}
