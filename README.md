@@ -22,5 +22,5 @@ npm run build
 
 ## Contributors
 
-- Hoang Huynh Tuan Kiet (hkiet)
 - Huynh Khanh Duy (huduy)
+- Hoang Huynh Tuan Kiet (hkiet)

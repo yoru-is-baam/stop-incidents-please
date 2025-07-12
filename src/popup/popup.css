@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+#toggle-btn {
+  padding: 10px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #eee;
+  color: #333;
+  transition: background 0.2s, color 0.2s;
+}
+
+#toggle-btn.on {
+  background: #4caf50;
+  color: #fff;
+}
+
+#toggle-btn.off {
+  background: #f44336;
+  color: #fff;
+}
