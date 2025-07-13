@@ -7,6 +7,10 @@ import {
   blockAllFileInputs,
   unblockAllFileInputs,
 } from "./file-upload/fileinput-blocker";
+import {
+  blockSendExternalEmails,
+  unblockSendExternalEmails,
+} from "./send-email/blocker";
 
 // Listen for messages from popup or background scripts
 chrome.runtime.onMessage.addListener(
@@ -16,9 +20,11 @@ chrome.runtime.onMessage.addListener(
     if (message.enable) {
       addGlobalDragDropBlockers();
       blockAllFileInputs();
+      blockSendExternalEmails();
     } else {
       removeGlobalDragDropBlockers();
       unblockAllFileInputs();
+      unblockSendExternalEmails();
     }
   }
 );
